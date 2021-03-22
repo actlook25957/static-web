@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: opsta-dev-web
-  namespace: student27-opsta-dev
+  namespace: student27-static-web
   labels:
     app: opsta-dev-web
 spec:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: opsta-dev-web
-        image: ghcr.io/actlook25957/opsta-web:dev
+        image: ghcr.io/actlook25957/static-web:dev
         imagePullPolicy: Always
         ports:
         - containerPort: 80

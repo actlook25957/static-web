@@ -1,6 +1,6 @@
 services:
   web:
     build: .
-    image: ghcr.io/actlook25957/opsta-web:dev
+    image: ghcr.io/actlook25957/static-web:dev
     ports:
       - "8080:80"
